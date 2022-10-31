@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coffee House</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Coffee House</h1>
+<form class="container" onsubmit="return handleSubmit()" method="POST">
+	<div class="product">
+		<div class="coffees">
+			<div>
+				<label>Coffee</label>
+				<select id="c1" name="coffee">
+					<option>Select Coffee</option>
+					<option value="Expresso">Expresso</option>
+					<option value="Cappuccino">Cappuccino</option>
+					<option value="Latte">Latte</option>
+				</select>
+			</div>
+			<div>
+				<label>Qte</label>
+				<input type="number" maxlength="4" id="cq1"/>
+			</div>
+		</div>
+		<div class="ad-ons">
+			<div>
+				<label>Add-on</label>
+				<select name="add-on" id="a1">
+					<option>Select Add-on</option>
+					<option value="Milk">Milk</option>
+					<option value="Cream">Cream</option>
+					<option value="Latte">Latte</option>
+				</select>
+			</div>
+			
+		</div>
+	</div>
+	
+	<button type="submit" id="submitBtn">Order</button>
+</form>
+<span id='test'></span>
+<div class="bill">
+	<h1>Your Bill</h1>
+	<div id="sum"></div>
+	<hr/>
+	<div class="pay">
+		<button class="payBtn">Pay</button>
+		<span>total : <b id="total"></b></span>
+	</div>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

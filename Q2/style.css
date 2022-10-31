@@ -1,0 +1,55 @@
+
+body{
+	width: 50%;
+	margin: auto;
+	padding: 30px 0
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	background-color: lightgray;
+	box-shadow: 2px 3px 5px dark;
+	padding: 10px 0 10px 10px;
+	border-radius: 5px 5px 0 0;
+}
+
+.product{
+	display: flex;
+	column-gap: 2rem;
+	align-items: center;
+}
+.coffees, .ad-ons{
+	display:  flex;
+	column-gap: 1rem;
+	align-items: center;
+}
+
+input[type=number]{
+	width: 30px;
+}
+
+button{
+	width: 100px;
+	background-color: lightblue;
+	border:none;
+	border-radius: 5px;
+	padding: 5px 0;
+	cursor: pointer;
+	margin-left: 20px
+
+}
+.bill{
+}
+#sum{
+	display: flex;
+	flex-direction: column;
+	gap:2rem;
+	margin-bottom: 30px;
+}
+.pay{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+}
